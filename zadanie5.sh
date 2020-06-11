@@ -1,16 +1,15 @@
 #!/bin/bash -x
+
 #3 points
 man -f notify-send
 notify-send --help
+
 #4 points
 man -k ssh > man.txt
 find . -name "man.txt" -exec grep -o "ssh" '{}' \; | wc -l
 rm man.txt;
-
 whatis nano
-
 whereis nano
-
 which nano 
 ssh -V
 
